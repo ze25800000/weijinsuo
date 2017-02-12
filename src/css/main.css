@@ -1,4 +1,252 @@
-/* 公共样式 */
+/*========================
+          bootstrap扩展
+==========================*/
+.btn-weijinsuo {
+    color: #ffffff;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-weijinsuo:hover,
+.btn-weijinsuo:focus,
+.btn-weijinsuo:active,
+.btn-weijinsuo.active,
+.open .dropdown-toggle.btn-weijinsuo {
+    color: #ffffff;
+    background-color: #db3b43;
+    border-color: #DB3B43;
+}
+
+.btn-weijinsuo:active,
+.btn-weijinsuo.active,
+.open .dropdown-toggle.btn-weijinsuo {
+    background-image: none;
+}
+
+.btn-weijinsuo.disabled,
+.btn-weijinsuo[disabled],
+fieldset[disabled] .btn-weijinsuo,
+.btn-weijinsuo.disabled:hover,
+.btn-weijinsuo[disabled]:hover,
+fieldset[disabled] .btn-weijinsuo:hover,
+.btn-weijinsuo.disabled:focus,
+.btn-weijinsuo[disabled]:focus,
+fieldset[disabled] .btn-weijinsuo:focus,
+.btn-weijinsuo.disabled:active,
+.btn-weijinsuo[disabled]:active,
+fieldset[disabled] .btn-weijinsuo:active,
+.btn-weijinsuo.disabled.active,
+.btn-weijinsuo[disabled].active,
+fieldset[disabled] .btn-weijinsuo.active {
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-weijinsuo .badge {
+    color: #E92322;
+    background-color: #ffffff;
+}
+.navbar-weijinsuo {
+    background-color: #fff;
+    border-color: #f0f0f0;
+}
+.navbar-weijinsuo .navbar-brand {
+    color: #777;
+    height:80px;
+}
+.navbar-weijinsuo .navbar-brand:hover,
+.navbar-weijinsuo .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-weijinsuo .navbar-text {
+    color: #777;
+}
+.navbar-weijinsuo .navbar-nav > li > a {
+    line-height: 48px;
+    font-size: 14px;
+    color: #777;
+}
+.navbar-weijinsuo .navbar-nav > li > a:hover,
+.navbar-weijinsuo .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-weijinsuo .navbar-nav > .active > a,
+.navbar-weijinsuo .navbar-nav > .active > a:hover,
+.navbar-weijinsuo .navbar-nav > .active > a:focus {
+    color: #555;
+    border-bottom: 2px solid #e92322;
+    background-color: #fff;
+}
+.navbar-weijinsuo .navbar-nav > .disabled > a,
+.navbar-weijinsuo .navbar-nav > .disabled > a:hover,
+.navbar-weijinsuo .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-weijinsuo .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.navbar-weijinsuo .navbar-toggle:hover,
+.navbar-weijinsuo .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-weijinsuo .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-weijinsuo .navbar-collapse,
+.navbar-weijinsuo .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-weijinsuo .navbar-nav > .open > a,
+.navbar-weijinsuo .navbar-nav > .open > a:hover,
+.navbar-weijinsuo .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-weijinsuo .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-weijinsuo .navbar-link {
+    color: #777;
+}
+.navbar-weijinsuo .navbar-link:hover {
+    color: #333;
+}
+.navbar-weijinsuo .btn-link {
+    color: #777;
+}
+.navbar-weijinsuo .btn-link:hover,
+.navbar-weijinsuo .btn-link:focus {
+    color: #333;
+}
+.navbar-weijinsuo .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-weijinsuo .btn-link:hover,
+.navbar-weijinsuo .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-weijinsuo .btn-link:focus {
+    color: #ccc;
+}
+/*========================
+          公共样式
+==========================*/
 body {
     font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
 }
+
+@font-face {
+    font-family: 'weijnsuo';
+    src: url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: weijnsuo;
+    font-style: normal;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: "\e909";
+    font-size: 15px;
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+/*========================
+          头部区域
+==========================*/
+#header {
+}
+
+#header > .topbar {
+    height: 40px;
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 40px;
+}
+
+#header > .topbar > .container > .row > div {
+    height: 40px;
+    font-size: 12px;
+    color: #888888;
+}
+
+#header > .topbar > .container div + div {
+    border-left: 1px solid #c0c0c0;
+}
+
+#header .mobile-link {
+    display: block;
+    font-size: 12px;
+    color: #888888;
+}
+
+#header .mobile-link > img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 30px;
+    z-index: 1;
+}
+
+#header .mobile-link:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+#header .mobile-link:hover > img {
+    color: #888888;
+    text-decoration: none;
+    display: block;
+}
+
+#header .icon-icon {font-size: 50px;color: #E92322;line-height: 50px;vertical-align: middle;}
+
+#header .icon-logo {font-size: 32px;color: #333;line-height: 50px;vertical-align: middle;}
+
+/*========================
+          测试区域
+==========================*/
+
+/*========================
+          头部区域
+==========================*/
+
+/*========================
+          脚注区域
+==========================*/
