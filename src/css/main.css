@@ -36,12 +36,14 @@
     padding: 45px 0;
 }
 
-.panel-weijinsuo > .panel-heading >p {
+.panel-weijinsuo > .panel-heading > p {
     margin-bottom: 0;
 }
-.panel-weijinsuo > .panel-heading > p>strong {
+
+.panel-weijinsuo > .panel-heading > p > strong {
     font-size: 30px;
 }
+
 .panel-weijinsuo > .panel-heading::before, .panel-weijinsuo > .panel-heading::after {
     content: '';
     width: 16px;
@@ -273,7 +275,7 @@ fieldset[disabled] .navbar-weijinsuo .btn-link:focus {
 }
 
 /*========================
-          公共样式
+         公共样式
 ==========================*/
 body {
     font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
@@ -311,7 +313,7 @@ body {
 }
 
 /*========================
-          头部区域
+         头部区域
 ==========================*/
 #header {
 }
@@ -373,7 +375,7 @@ body {
 }
 
 /*========================
-          通栏广告轮播
+         广告轮播
 ==========================*/
 /*#ad {*/
 /*}*/
@@ -392,7 +394,7 @@ body {
 }
 
 /*========================
-          特色区域
+         特色介绍
 ==========================*/
 #feature {
     padding: 50px 0;
@@ -456,7 +458,7 @@ body {
 }
 
 /*========================
-          产品推荐
+         产品推荐
 ==========================*/
 
 #products {
@@ -466,10 +468,10 @@ body {
 
 #products .container .nav-tabs {
     padding-right: 20px;
+    font-size: 0;
 }
 
 #products .container .nav-tabs li {
-
 }
 
 #products .container .nav-tabs li a {
@@ -498,5 +500,186 @@ body {
 }
 
 /*========================
-          脚注区域
+         新闻列表
 ==========================*/
+
+#news {
+    padding: 50px 0;
+}
+
+#news .news-title {
+    padding: 15px 0px;
+    border-bottom: 1px dashed #c0c0c0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+#news .news-title::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+}
+
+#news .nav-pills li {
+    width: 60px;
+}
+
+#news .nav-pills li a {
+    border: none;
+}
+
+.icon-news01:before {
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news02:before {
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news03:before {
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+.icon-news04:before {
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+@media (max-width: 768px) {
+    #news .nav-stacked > li {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+/*========================
+          合作伙伴
+==========================*/
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+#partner {
+    padding: 30px 0;
+}
+
+#partner h3 {
+    text-align: center;
+}
+
+#partner ul {
+    padding: 0;
+    list-style: none;
+    width: 818px;
+    position: relative;
+    overflow: hidden;
+}
+
+#partner ul li {
+    float: left;
+}
+
+#partner ul li + li {
+    border-left: 1px dashed #e0e0e0;
+}
+
+#partner ul li a {
+    padding: 10px 20px;
+    font-size: 50px;
+    color: #888;
+}
+
+#partner ul li a:hover {
+    text-decoration: none;
+}
+
+/*========================
+         脚注区域
+==========================*/
+footer {
+    height: 200px;
+}

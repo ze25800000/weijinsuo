@@ -6,7 +6,7 @@ $(function () {
             // 因为拿到是DOM对象 需要转换
             var $item = $(item);
             // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
-            var imgSrc =isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+            var imgSrc = isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
             // 设置背景图片
             $item.css('backgroundImage', 'url("' + imgSrc + '")');
             //
@@ -18,6 +18,21 @@ $(function () {
             }
         });
     }
+
     resize();
     window.onresize = resize;
+    /**
+     * 控制标签页的容器宽度
+     * */
+    var $ulContainer = $('.nav-tabs');
+    var width = 0;
+    $ulContainer.children().each(function (index, element) {
+        width += element.clientWidth;
+    });
+    if (width > $(window).width()) {
+        $ulContainer.css('width', width + 40).parent().css('overflow-x', 'scroll');
+    }
+    $('#news .nav-pills a').on('click', function () {
+        $('.news-title').text($(this).parent().data('title'));
+    });
 });
