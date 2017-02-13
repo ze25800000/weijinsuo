@@ -1,6 +1,5 @@
 $(function () {
     function resize() {
-        console.log('onresize');
         var windowWidth = $(window).width();
         var isSmallScreen = windowWidth < 768;
         $('#ad > .carousel-inner > .item').each(function (i, item) {
@@ -8,7 +7,6 @@ $(function () {
             var $item = $(item);
             // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
             var imgSrc =isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
-            console.log(imgSrc);
             // 设置背景图片
             $item.css('backgroundImage', 'url("' + imgSrc + '")');
             //
